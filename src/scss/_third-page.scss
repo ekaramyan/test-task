@@ -1,0 +1,24 @@
+.phones-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex: 0 1 30% 70%;
+    gap: 40px;
+    justify-content: space-between;
+    align-items: stretch;
+
+}
+.phones-left {
+    height: 100%;
+}
+.t-header {
+    padding: 1% 0 0 0;
+font-family: 'Roboto Slab';
+font-weight: 700;
+font-size: 1.25em;
+line-height: 140%;
+letter-spacing: 0.05em;
+}
+.t-subheader {
+    font-size: 1.25em;
+    padding: 0.4em 0 0 0;
+}

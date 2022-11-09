@@ -1,0 +1,67 @@
+.section-1
+{
+    background: url(/src/img/first-page-bg.jpg) no-repeat scroll center / cover;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw; 
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+.text-block
+{
+    display: flex;
+    //flex-direction: column;
+    width: 100%;
+    align-self: flex-end;
+    padding: 0 2% 0 0;
+    color: #FAF6F6;
+}
+.decor
+{
+    width: 50%;
+    height: 100%;
+    min-height: 60%;
+}
+.text
+{
+display: flex;
+flex-direction: column;
+gap: 5%;
+}
+.header-text {
+    
+    justify-self: center;
+    font-weight: 900;
+    font-size: 4em;
+    line-height: 106%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+.subheader-text {
+    justify-self: center;
+    font-family: 'Roboto Slab';
+    font-weight: 700;
+    font-size: 1.25em;
+    line-height: 140%;
+    letter-spacing: 0.05em;
+}
+.btn
+{
+    background: #fff;
+    border: #fff 1px solid;
+    text-transform: uppercase;
+    max-width: 290px;
+    margin-top: 40px;
+    p{
+    font-weight: 700;
+    font-size: 1em;
+    line-height: 150%;
+    letter-spacing: 0.1em;
+    color: $orange;
+    padding: 0.75em 0;
+    }
+}
+

@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel='stylesheet' type='text/css' media='screen' href='css/styles.css'>
     <script src="https://kit.fontawesome.com/48c939ed2f.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width">
     <title>Test</title>
 </head>
 
 <body>
-    <div class="container"></div>
     <header class="header">
         <div class="header__upper">
             <a href="#"><img src="src/img/icon.svg" alt="icon"></a>
@@ -19,10 +19,10 @@
                 <img src="src/img/burger-icon.svg" alt="burger menu">
             </div>
             <div class="search-wrap">
-                <div class="search">
-                    <span class="search__icon"><img src="/src/img/search.svg" alt="search icon"></span>
+                <a class="search">
+                    <div class="search__icon"><img src="/src/img/search.svg" alt="search icon"></div>
                     <input type="text" class="searchTerm" placeholder="I need...">
-                </div>
+                </a>
             </div>
             <div class="shop">
                 <i class="fa-solid fa-cart-shopping"></i>
@@ -30,39 +30,96 @@
             <div class="help">
                 <i class="fa-regular fa-circle-question"></i>
                 <p class="switch"> </p>
-                    <p class="dark-text">Help</p>
+                <p class="dark-text">Help</p>
             </div>
             <div class="account">
                 <i class="fa-regular fa-user"></i>
                 <p ass="switch">
-                    <p class="dark-text">account</p>
+                <p class="dark-text">Account</p>
                 <div class="account__arrow">
                     <i class="fa-solid fa-caret-down"></i>
                 </div>
             </div>
-            <div class="switch">
-                <p class="dark-text">personal</p>
+            <div class="switch-wrapper">
+                <p class="dark-text">Personal</p>
                 <label class="switch">
                     <input type="checkbox">
-                    <span class="switch-slider arrow"><i class="fa-solid fa-arrow-right"></i></span>
+                    <span class="switch-slider round"></span>
                 </label>
+                <p class="dark-text">Business</p>
             </div>
+        </div>
 
-
-            <div class="header__down">
-                <ul class="">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </div>
+        <div class="header__down">
+            <ul class="header-menu">
+                <li>TV</li>
+                <li>Mobile Service</li>
+                <li>Security Alarm</li>
+                <li>Deals</li>
+                <li>Bundles</li>
+            </ul>
+        </div>
     </header>
-    <main>
-        <section>
 
-        </section>
+    <main>
+        <div class="container">
+            <section class="section-1">
+                <div class="text-block">
+                    <img class="decor" src="src/img/decor.svg"></img>
+                    <div class="text">
+                        <p class="header-text">
+                            Your <br> Connection <br> to the world
+                        </p>
+                        <p class="subheader-text">
+                            Want TV Connection for your home? <br> Choose from our packages
+                        </p>
+                        <button class="btn orange">
+                            <p>Request a Quote →</p>
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="container-small">
+            <section class="section-2">
+                <div class="color-blocks">
+                    <div>
+                        <p>Ctnet </p>
+                        <p>internet up to</p>
+                        <span>
+                            <span class="big-num">10</span>
+                            mbps</span>
+                    </div>
+                    <div>
+                        <p>digital business</p> 
+                        <p>phone Service</p> 
+                        <p>Starting at</p>
+                        <span><span class="big-num">$14</span></span>
+                    </div>
+                    <div>
+                        <p>Ctnet</p>
+                        <p>extreme internet</p>
+                        <p>up to</p>
+                        <span><span class="big-num">100</span>mbps</span>
+                    </div>
+                </div>
+            </section>
+            <section class="section-2">
+                <div class="phones-wrapper">
+                    <div class="phones-left">
+                        <img src="/src/img/iphone-11.png" alt="iphone-11">
+                        <p class="t-header dark-text">Want iPhone 11?</p>
+                        <p class="t-subheader dark-text">Get 50% off for our customers</p>
+                    </div>
+                    <div class="phones-right">
+                        <img src="/src/img/phones.png" alt="phones">
+                        <p class="t-header dark-text">Need new phones with your family members?</p>
+                        <p class="t-subheader dark-text">Get 50% off for all devices, plus $150 reward card for your next purchase.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
     </main>
     <footer>
 
