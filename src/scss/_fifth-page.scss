@@ -1,0 +1,28 @@
+.section-4 {
+padding: 80px 70px 0 0;
+    &__block {
+        display: flex;
+        flex-direction: row;
+        flex: 0 1 50%;
+        gap: 4%;
+    }
+}
+.text {
+}
+.t-header {
+    font-size: 1.75em;
+}
+
+.t-subheader {
+    padding: 0;
+}
+.btn-invisible {
+    font-weight: 700;
+    font-size: 1em;
+    line-height: 150%;
+    letter-spacing: 0.1em;
+    background: #0000;
+    border: 0;
+    p{
+    color: $text-1;}
+}
