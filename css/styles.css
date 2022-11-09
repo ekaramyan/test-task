@@ -498,3 +498,37 @@ input:checked + .switch-slider:before {
 .btn-invisible p {
   color: #464D53;
 }
+
+.section-5 {
+  padding-top: 10%;
+}
+
+.chips {
+  background: url(/src/img/chips.png) no-repeat;
+  width: 100%;
+  height: 100%;
+}
+.chips-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 12%;
+}
+
+.btn-white {
+  background: rgba(0, 0, 0, 0);
+}
+.btn-white p {
+  color: #fff;
+}
+
+.container-smaller {
+  margin: 60px 120px;
+}
+
+.service-includes {
+  display: flex;
+  gap: 40px;
+}
