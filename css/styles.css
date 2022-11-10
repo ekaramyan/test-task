@@ -481,6 +481,8 @@ input:checked + .switch-slider:before {
 
 .t-header {
   font-size: 1.75em;
+  text-transform: uppercase;
+  padding: 0 0 4.44% 0;
 }
 
 .t-subheader {
@@ -531,4 +533,89 @@ input:checked + .switch-slider:before {
 .service-includes {
   display: flex;
   gap: 40px;
+  padding-bottom: 40px;
+}
+.service-includes.li {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: stretch;
+}
+
+.card-head {
+  font-size: 1.25em;
+  font-weight: 700;
+  line-height: 140%;
+}
+.card-p {
+  padding-top: 1%;
+}
+.card-string {
+  content: "";
+  width: 100%;
+  height: 0.1em;
+  opacity: 0.6;
+  margin-top: 1em;
+  position: relative;
+}
+.card-string::after {
+  content: "";
+  position: absolute;
+  left: 20px;
+  bottom: -20px; /* Положение треугольника */
+  border: 10px solid transparent; /* Прозрачные границы */
+  border-top: 10px solid; /* Добавляем треугольник */
+}
+.card-string.red {
+  background: #FF5555;
+}
+.card-string.blue {
+  background: #6ED5EB;
+}
+.card-string.green {
+  background: #5CD9B5;
+}
+.card-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  max-height: 170px;
+  padding-top: 1.25em;
+}
+
+.red {
+  color: #FF5555;
+}
+
+.green {
+  color: #5CD9B5;
+}
+
+.blue {
+  color: #6ED5EB;
+}
+
+.section-6 {
+  background: url(/src/img/section-6-bg.png) no-repeat scroll center/cover;
+  max-height: 100vh;
+  height: 100%;
+  width: 100vw;
+}
+.section-6__block {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: 100%;
+}
+
+.white-block {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  width: 50%;
+  height: 50%;
+}
+.white-block .btn-invisible {
+  border: 1px solid #464D53;
 }
