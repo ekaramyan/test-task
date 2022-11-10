@@ -3,6 +3,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
+html {
+  width: 100vw;
+}
+
 *,
 *::before,
 *::after {
@@ -607,6 +611,7 @@ input:checked + .switch-slider:before {
   justify-content: flex-end;
   width: 100%;
   height: 100%;
+  padding: 6%;
 }
 
 .white-block {
@@ -615,7 +620,122 @@ input:checked + .switch-slider:before {
   background: #fff;
   width: 50%;
   height: 50%;
+  padding: 5% 7%;
 }
 .white-block .btn-invisible {
   border: 1px solid #464D53;
+}
+.white-block .t-subheader {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.white-block ul {
+  padding: 9% 0;
+}
+.white-block ul li::marker {
+  content: "ᐳ";
+  color: orange;
+  font-weight: 900;
+}
+.white-block ul li p {
+  padding-left: 3%;
+}
+
+.section-7 {
+  width: 100vw;
+}
+.section-7 p {
+  height: fit-content;
+}
+
+.form-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex: 1 0 100%;
+  gap: 5%;
+  justify-content: center;
+  align-items: center;
+}
+.form-wrapper select {
+  background: #FFFFFF;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  width: 100%;
+  height: 2em;
+  margin: 2%;
+}
+.form-wrapper div {
+  display: flex;
+  flex-direction: column;
+  gap: 2%;
+}
+.form-wrapper input {
+  background: #FFFFFF;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  width: 50%;
+  height: 2em;
+  margin: 2%;
+  padding: 1%;
+}
+
+.page {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  padding: 7% 1% 0%;
+  flex: 0 1 50%;
+}
+.page-wrapper {
+  display: grid;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 2%;
+  grid-template-rows: 0.1fr 0.1fr 0.7fr 0.1fr;
+}
+.page-wrapper .t-header {
+  padding: 1% 0;
+  display: inline;
+}
+.page-wrapper .t-subheader {
+  font-size: 1em;
+}
+.page-wrapper .btn-white {
+  align-self: center;
+  border: #464D53 1px solid;
+  padding: 0% 5%;
+  margin: 0 auto;
+}
+.page-wrapper .btn-white p {
+  color: #464D53;
+}
+
+.icons-wrapper {
+  display: flex;
+  gap: 5%;
+  width: 100%;
+  padding: 5% 0;
+  justify-content: space-evenly;
+}
+
+.icon-wrapper img {
+  margin-bottom: 10%;
+}
+.icon-wrapper .t-header {
+  font-size: 1.25em;
+  padding-top: 10%;
+}
+.separator {
+  content: "|";
+  width: 1px;
+  background: #464D53;
+}
+
+.section-8 {
+  background: #FFFFFF;
+  height: 100vh;
+}
+.section-8 .t-header {
+  padding: 3.5% 0 0 7%;
 }
