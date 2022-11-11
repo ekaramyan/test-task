@@ -4,7 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
 html {
-  width: 100vw;
+  max-width: 100vw;
 }
 
 *,
@@ -70,6 +70,10 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
+main, section, header, footer {
+  max-width: 100vw;
+}
+
 /* Выставляем основные настройки по-умолчанию для body */
 body {
   max-width: 100vw;
@@ -79,7 +83,6 @@ body {
   line-height: 1.5;
   font-family: Raleway;
   font-size: 16px;
-  overflow-x: hidden;
 }
 
 /* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
@@ -130,16 +133,20 @@ main {
 }
 
 .container {
-  max-width: 1440px;
+  max-width: 100vw;
   width: 100%;
   height: 100%;
 }
 .container-small {
-  display: flex;
-  flex-direction: column;
-  width: 90%;
-  align-self: center;
+  max-width: 90vw;
+  width: 100%;
+  height: 100%;
   margin: 0 auto;
+}
+.container-smaller {
+  max-width: 70vw;
+  width: 100%;
+  margin: 5% auto;
 }
 
 .header {
@@ -153,6 +160,13 @@ main {
   justify-content: space-between;
   align-items: center;
 }
+.header__upper .help, .header__upper .account, .header__upper .shop {
+  transition: 0.3s all;
+}
+.header__upper .help i, .header__upper .account i, .header__upper .shop i {
+  font-size: 1.2em;
+  color: #464D53;
+}
 .header__down {
   display: flex;
   margin-top: 30px;
@@ -162,8 +176,31 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 40px;
+  gap: 10%;
+  max-width: 1300px;
+  width: 100%;
 }
+.header-menu li > a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  cursor: pointer;
+  transition: 0.3s all;
+}
+.header-menu li > a i {
+  font-size: 1.5em;
+  text-align: center;
+  color: #464D53;
+  transition: 0.3s all;
+}
+.header-menu li > a:hover {
+  color: #FF891B;
+}
+.header-menu li > a:hover i {
+  color: #FF891B;
+}
+
 .burger-menu {
   cursor: pointer;
 }
@@ -304,7 +341,7 @@ input:checked + .switch-slider:before {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  width: 100vw;
+  max-width: 100vw;
   align-content: center;
   justify-content: center;
   align-items: center;
@@ -356,6 +393,7 @@ input:checked + .switch-slider:before {
   max-width: 290px;
   margin-top: 40px;
   padding: 0 1%;
+  transition: 0.3s all;
 }
 .btn p {
   font-weight: 700;
@@ -364,6 +402,14 @@ input:checked + .switch-slider:before {
   letter-spacing: 0.1em;
   color: #FF891B;
   padding: 0.75em 0;
+}
+
+.orange:hover {
+  background: #FF891B;
+  border: #FF891B;
+}
+.orange:hover p {
+  color: #fff;
 }
 
 .section-2 {
@@ -451,7 +497,6 @@ input:checked + .switch-slider:before {
   background: #464D53;
 }
 .section-3__wrapper {
-  padding: 0 10%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -506,21 +551,24 @@ input:checked + .switch-slider:before {
 }
 
 .section-5 {
-  padding-top: 10%;
+  padding-top: 7%;
+  max-width: 100vw;
+  height: 100%;
 }
 
 .chips {
   background: url(/src/img/chips.png) no-repeat;
   width: 100%;
-  height: 100%;
+  height: max-content;
 }
 .chips-wrapper {
   display: flex;
   flex-direction: column;
   align-content: center;
-  justify-content: center;
+  height: 100%;
+  padding: 9%;
   align-items: flex-start;
-  padding: 12%;
+  justify-content: center;
 }
 
 .btn-white {
@@ -528,10 +576,6 @@ input:checked + .switch-slider:before {
 }
 .btn-white p {
   color: #fff;
-}
-
-.container-smaller {
-  margin: 60px 120px;
 }
 
 .service-includes {
@@ -604,7 +648,8 @@ input:checked + .switch-slider:before {
   background: url(/src/img/section-6-bg.png) no-repeat scroll center/cover;
   max-height: 100vh;
   height: 100%;
-  width: 100vw;
+  max-width: 100vw;
+  margin-top: 10%;
 }
 .section-6__block {
   display: flex;
@@ -642,7 +687,7 @@ input:checked + .switch-slider:before {
 }
 
 .section-7 {
-  width: 100vw;
+  max-width: 100vw;
 }
 .section-7 p {
   height: fit-content;
@@ -682,9 +727,9 @@ input:checked + .switch-slider:before {
 
 .page {
   display: flex;
-  width: 100vw;
+  max-width: 100vw;
   justify-content: center;
-  padding: 7% 1% 0%;
+  padding: 7% 0% 0%;
   flex: 0 1 50%;
 }
 .page-wrapper {
@@ -735,7 +780,75 @@ input:checked + .switch-slider:before {
 .section-8 {
   background: #FFFFFF;
   height: 100vh;
+  max-width: 100vw;
+  width: 100%;
 }
 .section-8 .t-header {
   padding: 3.5% 0 0 7%;
+}
+
+footer {
+  background: #E5E5E5;
+}
+
+.footer {
+  padding: 5% 10% 6% 5%;
+}
+.footer-text {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+.footer__wrapper {
+  display: flex;
+  gap: 5%;
+}
+.footer__wrapper ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.footer__wrapper ul > li {
+  display: flex;
+  gap: 15px;
+}
+.footer__wrapper ul > li .icon-wrapper {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 50%;
+  background: #464D53;
+  justify-content: center;
+  align-items: center;
+}
+.footer__wrapper ul > li i {
+  color: #FAF6F6;
+  font-size: 1.5em;
+}
+.footer__wrapper ul > li p {
+  font-weight: 700;
+}
+.footer__wrapper ul > li .footer-text {
+  font-weight: 400;
+}
+.footer__menu {
+  display: flex;
+  flex-direction: column;
+}
+.footer__menu > li > a {
+  text-decoration: none;
+}
+.footer__menu > li > a .dark-text {
+  font-weight: 400;
+  color: #000;
+}
+.footer__menu > li:first-child p {
+  font-weight: 700;
+  color: #464D53;
+}
+
+.phone-wrapper {
+  padding-left: 3.8%;
 }

@@ -15,7 +15,7 @@
     <header class="header">
         <div class="header__upper">
             <a href="#"><img src="src/img/icon.svg" alt="icon"></a>
-            <div class="burger-menu">
+            <div class="burger-menu" id="menu">
                 <img src="src/img/burger-icon.svg" alt="burger menu">
             </div>
             <div class="search-wrap">
@@ -51,11 +51,31 @@
 
         <div class="header__down">
             <ul class="header-menu">
-                <li>TV</li>
-                <li>Mobile Service</li>
-                <li>Security Alarm</li>
-                <li>Deals</li>
-                <li>Bundles</li>
+                <li>
+                    <a>
+                        <i class="fa-solid fa-tv"></i>TV
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <i class="fa-solid fa-mobile-screen-button"></i>Mobile Service
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <i class="fa-regular fa-bell"></i>Security Alarm
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <i class="fa-regular fa-handshake"></i>Deals
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <i class="fa-regular fa-hand-pointer"></i>Bundles
+                    </a>
+                </li>
             </ul>
         </div>
     </header>
@@ -253,36 +273,36 @@
 
                         <div class="form-wrapper">
 
-                          <div>
-                              <form>
-                                  <p><select name="country" aria-placeholder="Country*">
-                                          <optgroup label="America">
-                                              <option value="r1">USA</option>
-                                              <option value="r2">Canada</option>
-                                              <option value="r3">Mexico</option>
-                                          </optgroup>
-                                          <optgroup label="Europe">
-                                              <option value="u1">Poland</option>
-                                              <option value="u2">Czech</option>
-                                              <option value="u3">Ukraine</option>
-                                          </optgroup>
-                                      </select></p>
-                              </form>
-                              <form>
-                                  <p><select name="state" aria-placeholder="State*">
-                                          <optgroup label="USA">
-                                              <option value="r1">California</option>
-                                              <option value="r2">New York</option>
-                                              <option value="r3">Texas</option>
-                                          </optgroup>
-                                          <optgroup label="Ukraine">
-                                              <option value="u1">Kyiv</option>
-                                              <option value="u2">Kharkiv</option>
-                                              <option value="u3">Donetsk</option>
-                                          </optgroup>
-                                      </select></p>
-                              </form>
-                          </div>
+                            <div>
+                                <form>
+                                    <p><select name="country" aria-placeholder="Country*">
+                                            <optgroup label="America">
+                                                <option value="r1">USA</option>
+                                                <option value="r2">Canada</option>
+                                                <option value="r3">Mexico</option>
+                                            </optgroup>
+                                            <optgroup label="Europe">
+                                                <option value="u1">Poland</option>
+                                                <option value="u2">Czech</option>
+                                                <option value="u3">Ukraine</option>
+                                            </optgroup>
+                                        </select></p>
+                                </form>
+                                <form>
+                                    <p><select name="state" aria-placeholder="State*">
+                                            <optgroup label="USA">
+                                                <option value="r1">California</option>
+                                                <option value="r2">New York</option>
+                                                <option value="r3">Texas</option>
+                                            </optgroup>
+                                            <optgroup label="Ukraine">
+                                                <option value="u1">Kyiv</option>
+                                                <option value="u2">Kharkiv</option>
+                                                <option value="u3">Donetsk</option>
+                                            </optgroup>
+                                        </select></p>
+                                </form>
+                            </div>
                             <div>
                                 <form>
                                     <p><select name="requested-services" aria-placeholder="Requested Services">
@@ -334,16 +354,92 @@
             </section>
 
 
-                <section class="section-8">
-                    <p class="t-header dark-text">See our wide spector of Services</p>
-                </section>
+            <section class="section-8">
+                <p class="t-header dark-text">See our wide spector of Services</p>
+            </section>
         </div>
     </main>
 
 
     <footer>
-
+        <div class="footer">
+            <p class="t-header dark-text">Contacs</p>
+            <div class="footer__wrapper">
+                <ul>
+                    <li class="phone-wrapper">
+                        <p class="dark-text">Call</p>
+                        <div class="separator"></div>
+                        <div class="icon-wrapper">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <p class="dark-text footer-text">(800) 45WORLD</p>
+                    </li>
+                    <li class="message-wrapper">
+                        <p class="dark-text">Write</p>
+                        <div class="separator"></div>
+                        <div class="icon-wrapper">
+                            <i class="fa-solid fa-comment-dots"></i>
+                        </div>
+                        <p class="dark-text footer-text">info@connectto.com</p>
+                    </li>
+                </ul>
+                <p class="dark-text footer-text">
+                    7 Days a week from 8:00 AM to 8:00 PM
+                </p>
+                <ul class="footer__menu">
+                    <li>
+                        <a href="">
+                            <p class="dark-text">About</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p class="dark-text">Company</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p class="dark-text">Head of Company</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p class="dark-text">FAQ</p>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="footer__menu">
+                    <li>
+                        <a href="">
+                            <p class="dark-text">Support</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p class="dark-text">Regulationary & Traffic</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p class="dark-text">Privacy Policy</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p class="dark-text">Copyright</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p class="dark-text">My Account</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </footer>
+
+
     <script src="https://kit.fontawesome.com/48c939ed2f.js" crossorigin="anonymous"></script>
     <script src='script.js'></script>
 </body>

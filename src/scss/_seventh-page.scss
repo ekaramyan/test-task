@@ -2,7 +2,8 @@
 background: url(/src/img/section-6-bg.png) no-repeat scroll center / cover;
 max-height: 100vh;
 height: 100%;   
-width: 100vw;
+max-width: 100vw;
+margin-top: 10%;
  
 
 
@@ -43,9 +44,4 @@ border: 1px solid $text-1;
               }
         }
     }
-}
-
-.t-header {
-}
-.dark-text {
 }

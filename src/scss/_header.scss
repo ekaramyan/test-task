@@ -7,6 +7,16 @@ background: #FAF6F6;
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        .help, .account, .shop {
+            i{
+                font-size: 1.2em;
+                color: $text-1;
+         
+            }
+            transition: .3s all;
+
+        }
     }
     &__down
     {
@@ -18,8 +28,33 @@ background: #FAF6F6;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 10%;
+    max-width: 1300px;
+    width: 100%;
     li{
+        >a{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            cursor: pointer;
+            transition: .3s all;
+            i{
+                font-size: 1.5em;
+                text-align: center;
+                color: $text-1;
+                transition: .3s all;
+            }
+            &:hover{
+                
+                color: $orange;
+                i{
+                    color: $orange;
+                }
+            }
+
+        }
+
 
     }
     }
@@ -163,4 +198,3 @@ align-items: center;
 {
     color: $text-1;
 }
-
