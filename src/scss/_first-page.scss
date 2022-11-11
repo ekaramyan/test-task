@@ -3,12 +3,12 @@
     background: url(/src/img/first-page-bg.jpg) no-repeat scroll center / cover;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    max-height: 100vh;
+    height: 100%;
     max-width: 100vw; 
     align-content: center;
     justify-content: center;
     align-items: center;
-    overflow-x: hidden;
 }
 .text-block
 {
@@ -16,7 +16,7 @@
     //flex-direction: column;
     width: 100%;
     align-self: flex-end;
-    padding: 0 2% 0 0;
+    padding: 0 2%;
     color: #FAF6F6;
 }
 .decor
