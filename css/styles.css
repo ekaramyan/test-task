@@ -213,6 +213,7 @@ main {
   position: absolute;
   padding: 3%;
   top: 100px;
+  z-index: 5;
 }
 .burger-menu.active {
   display: block;
