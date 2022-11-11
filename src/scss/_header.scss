@@ -59,11 +59,49 @@ background: #FAF6F6;
     }
     }
 }
-.burger-menu {
+
+.burger-menu{
+display: none;
+background: #fff;
+max-width: 380px;
+position: absolute;
+padding: 3%;
+top: 100px;
+
+    &.active
+    {
+display: block;
+    }
+&__btn {
     cursor: pointer;
+    color: $text-1;
+    transform: scale(1.4);
+    transition: .3s;
+    &.active{
+        transform: scale(1.7);
+        color: $orange;
+        z-index: 3;
+    }
 
 }
 
+.separator{
+    width: 100%;
+    height: 1px;
+}
+.menu{
+
+    p{
+        padding: 4%;
+    }
+
+}
+.btn-invisible{
+    padding: 3% 5%;
+    border: $text-1 solid 1px;
+    margin-top: 8%;
+}
+}
 .search-wrap {
 width: max-content;
 }
