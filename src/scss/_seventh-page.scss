@@ -26,6 +26,13 @@ padding: 6%;
 
     .btn-invisible {
 border: 1px solid $text-1;
+&:hover{
+    background: $orange;
+    border: $orange;
+    p{
+        color:$text-2;
+    }
+}
     }
     .t-subheader {
         font-weight: 700;
@@ -44,4 +51,8 @@ border: 1px solid $text-1;
               }
         }
     }
+}
+.phone-pic
+{
+    display: none;
 }
