@@ -51,17 +51,19 @@
 footer{
     display: flex;
     flex-direction: column;
-    
+
     .t-header
     {
-        padding: 3% 0 0 25%;
+        width: 55%;
+        padding: 2% 0;
     }
+
 
 }
 .footer
 {
     display: flex;
-    padding: 5% 0 6% 0;
+    padding: 0;
     justify-content: center;
 
 &__wrapper{
@@ -152,6 +154,11 @@ footer{
         justify-content: flex-start;
         gap: 5%;
     }
+    footer{
+        .t-header{
+            width: 60%;
+        }
+    }
 
 }
 
@@ -165,6 +172,11 @@ footer{
             padding: 3% 10% 3% 3%;
             text-align: left;
          }}
+         footer{
+            .t-header{
+                width: 75%;
+            }
+        }
 
 }
 
@@ -245,6 +257,10 @@ footer{
         .phone-wrapper {
             padding-left: 2.5%;
         }
+
+        .t-header{
+        width: 100%;
+        }
     }
 
 }
@@ -254,7 +270,7 @@ footer{
 
 @media(max-height: 720px){
     .text-block{
-        padding: 5% 2% 2% 2%
+        // padding: 5% 2% 2% 2%
     }
 
 }

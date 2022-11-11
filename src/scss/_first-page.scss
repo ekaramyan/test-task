@@ -9,6 +9,7 @@
     align-content: center;
     justify-content: center;
     align-items: center;
+    padding: 5% 3% 3% 0;
 }
 .text-block
 {
@@ -16,7 +17,7 @@
     //flex-direction: column;
     width: 100%;
     align-self: flex-end;
-    padding: 0 2%;
+    // padding: 0 2%;
     color: #FAF6F6;
 }
 .decor
