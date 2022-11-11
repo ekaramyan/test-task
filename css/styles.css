@@ -241,7 +241,45 @@ main {
 .burger-menu .menu p {
   padding: 4%;
 }
-.burger-menu .btn-invisible {
+.account__menu {
+  display: none;
+  background: #fff;
+  max-width: 380px;
+  position: absolute;
+  padding: 3%;
+  top: 100px;
+  z-index: 5;
+}
+.account__menu.active {
+  display: block;
+}
+.account__btn {
+  display: flex;
+  gap: 10px;
+  background: #fff;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  padding: 1%;
+  align-items: center;
+  cursor: pointer;
+}
+.account__btn.active {
+  color: #FF891B;
+  z-index: 3;
+}
+.account .separator {
+  width: 100%;
+  height: 1px;
+}
+.account .menu a {
+  color: #464D53;
+  display: flex;
+  align-items: center;
+}
+.account .menu p {
+  padding: 4%;
+}
+.btn-invisible {
   padding: 3% 5%;
   border: #464D53 solid 1px;
   margin-top: 8%;
@@ -328,16 +366,6 @@ main {
   background: #FF891B;
 }
 
-.account {
-  display: flex;
-  gap: 10px;
-  background: #fff;
-  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
-  border-radius: 20px;
-  padding: 1%;
-  align-items: center;
-  cursor: pointer;
-}
 .switch {
   position: relative;
   display: block;
