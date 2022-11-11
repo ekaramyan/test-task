@@ -165,10 +165,10 @@ main {
   justify-content: space-between;
   align-items: center;
 }
-.header__upper .help, .header__upper .account, .header__upper .shop {
+.header__upper .help, .header__upper .account__btn, .header__upper .shop {
   transition: 0.3s all;
 }
-.header__upper .help i, .header__upper .account i, .header__upper .shop i {
+.header__upper .help i, .header__upper .account__btn i, .header__upper .shop i {
   font-size: 1.2em;
   color: #464D53;
 }
@@ -241,31 +241,51 @@ main {
 .burger-menu .menu p {
   padding: 4%;
 }
+.account {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .account__menu {
   display: none;
   background: #fff;
   max-width: 380px;
+  padding: 1% 2%;
   position: absolute;
-  padding: 3%;
-  top: 100px;
+  top: 15%;
+  margin: 0 auto;
   z-index: 5;
 }
 .account__menu.active {
-  display: block;
+  display: flex;
+}
+.account__menu ul > li > a > p {
+  color: #464D53;
+  font-size: 0.9em;
 }
 .account__btn {
   display: flex;
+  flex: 0 1 33.3333%;
   gap: 10px;
+  width: 100%;
   background: #fff;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
   border-radius: 20px;
-  padding: 1%;
+  padding: 10%;
   align-items: center;
   cursor: pointer;
 }
 .account__btn.active {
-  color: #FF891B;
   z-index: 3;
+}
+.account__btn.active > i, .account__btn.active > p, .account__btn.active__arrow > i {
+  color: #FF891B;
+}
+.account__arrow {
+  transition: 0.3s all;
+}
+.account__arrow.active {
+  transform: rotate(180deg);
 }
 .account .separator {
   width: 100%;
@@ -279,6 +299,7 @@ main {
 .account .menu p {
   padding: 4%;
 }
+
 .btn-invisible {
   padding: 3% 5%;
   border: #464D53 solid 1px;
