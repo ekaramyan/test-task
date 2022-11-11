@@ -172,12 +172,24 @@ footer{
             padding: 3% 10% 3% 3%;
             text-align: left;
          }}
-         footer{
-            .t-header{
-                width: 75%;
-            }
+
+    footer{
+        .t-header{
+        width: 75%;
+        }
+    }
+
+    .footer{
+
+        &__wrapper{
+
+        }
+        &__menus{
+
+            flex-direction: column;
         }
 
+}
 }
 
 @media (max-width: 480px)
@@ -268,7 +280,8 @@ footer{
 
 
 
-@media(max-height: 720px){
+@media(max-height: 720px)
+{
     .text-block{
         // padding: 5% 2% 2% 2%
     }

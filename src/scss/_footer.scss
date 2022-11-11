@@ -12,6 +12,16 @@ footer{
         padding: 5% 0% 0% 5%;
         align-self: center;
     }
+    &__menus{
+        display: flex;
+        gap: 15%;
+        flex-wrap: wrap;
+        width: 100%;
+
+    }
+    &__menu{
+        >ul{padding: 0 10%}
+    }
     
 }
 .footer

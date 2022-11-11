@@ -970,6 +970,15 @@ footer .t-header {
   padding: 5% 0% 0% 5%;
   align-self: center;
 }
+footer__menus {
+  display: flex;
+  gap: 15%;
+  flex-wrap: wrap;
+  width: 100%;
+}
+footer__menu > ul {
+  padding: 0 10%;
+}
 
 .footer {
   padding: 2% 10% 6% 5%;
@@ -1172,6 +1181,9 @@ footer .t-header {
   }
   footer .t-header {
     width: 75%;
+  }
+  .footer__menus {
+    flex-direction: column;
   }
 }
 @media (max-width: 480px) {
