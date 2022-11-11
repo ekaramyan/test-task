@@ -90,16 +90,30 @@ display: block;
     height: 1px;
 }
 .menu{
+    a{
+        color: $text-1;
+        display: flex;
+        align-items: center;
+    }
 
     p{
         padding: 4%;
     }
+    .arrow{
+        // content:'';
+        // color: $text-1;
+        // width: 8px;
+        // height: 8px;
+    }
+
 
 }
 .btn-invisible{
     padding: 3% 5%;
     border: $text-1 solid 1px;
     margin-top: 8%;
+    font-size: 0.79em;
+    
 }
 }
 .search-wrap {
