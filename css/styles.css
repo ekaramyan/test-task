@@ -707,7 +707,7 @@ input:checked + .switch-slider:before {
 }
 
 .chips {
-  background: url(/src/img/chips.png) no-repeat scroll center/cover;
+  background: url(../src/img/chips.png) no-repeat scroll center/cover;
   width: 100%;
   height: max-content;
 }
